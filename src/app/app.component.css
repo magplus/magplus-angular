@@ -1,0 +1,78 @@
+/* src/app/landing-page/landing-page.component.css */
+.landing-page {
+    background: linear-gradient(90deg, #222323, #868a9a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .content-wrapper {
+    border: 2px solid #f1eaea; /* Add your border here */
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Keep the text and image side by side */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2.2); /* Add some shadow if needed */
+  }
+  
+  .text-content {
+    color: rgb(243, 233, 233);
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    color: rgb(244, 244, 244);
+  }
+  
+  .text-content h2 {
+    font-size: 2.5rem;
+    color: #1589f0;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #fffdfd;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+  }
+  
+  .newsletter-form button {
+    padding: 10px;
+    background-color: #1589f0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #2072b9;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .bg-dark {
+    background-color: #ecedf0 !important;
+}
