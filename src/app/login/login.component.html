@@ -13,21 +13,21 @@
       novalidate
     >
       <div class="form-group">
-        <label for="email">Email</label>  
+        <label for="username">Username</label>
         <input
-          type="email"   
+          type="text"
           class="form-control"
-          name="email"
-          [(ngModel)]="form.email"
+          name="username"
+          [(ngModel)]="form.username"
           required
-          #email="ngModel"
+          #username="ngModel"
         />
         <div
           class="alert alert-danger"
           role="alert"
-          *ngIf="email.errors && f.submitted"
+          *ngIf="username.errors && f.submitted"
         >
-          Email is required!
+          Username is required!
         </div>
       </div>
       <div class="form-group">
@@ -70,6 +70,11 @@
 
     <div class="alert alert-success" *ngIf="isLoggedIn">
       Logged in as {{ roles }}.
+    </div>
+
+    <!-- Add sign-up link here -->
+    <div *ngIf="!isLoggedIn" class="text-center">
+      <a routerLink="/register">Don't have an account? Sign up</a>
     </div>
   </div>
 </div>

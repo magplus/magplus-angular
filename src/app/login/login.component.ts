@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '../_services/auth.service';
-import { TokenStorageService } from '../_services/token-storage.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   form: any = {
-    email: null,   
+    username: null,
     password: null
   };
   isLoggedIn = false;
@@ -17,36 +17,23 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
   roles: string[] = [];
 
-  constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
-
-  ngOnInit(): void {
-    if (this.tokenStorage.getToken()) {
-      this.isLoggedIn = true;
-      this.roles = this.tokenStorage.getUser().roles;
-    }
-  }
+  constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit(): void {
-    const { email, password } = this.form;
+    const { username, password } = this.form;
 
-    this.authService.login(email, password).subscribe({
-      next: data => {
-        this.tokenStorage.saveToken(data.token);   
-        this.tokenStorage.saveUser(data);
-
-        this.isLoginFailed = false;
+    this.authService.login(username, password).subscribe(
+      data => {
         this.isLoggedIn = true;
-        this.roles = this.tokenStorage.getUser().roles;
-        this.reloadPage();
+        this.roles = data.roles;
+        this.isLoginFailed = false;
+        // Redirect to a new page after successful login
+        this.router.navigate(['/profile']);  // Change 'profile' to the route you want
       },
-      error: err => {
+      err => {
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }
-    });
-  }
-
-  reloadPage(): void {
-    window.location.reload();
+    );
   }
 }
