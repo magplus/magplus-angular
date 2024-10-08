@@ -1,6 +1,6 @@
 /* src/app/landing-page/landing-page.component.css */
 .landing-page {
-    background: linear-gradient(90deg, #222323, #868a9a);
+    background: linear-gradient(90deg, #353636, #eff0f1);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -72,6 +72,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 15px;
+    
   }
   .bg-dark {
     background-color: #ecedf0 !important;
@@ -162,4 +163,537 @@ ol, ul {
   font-weight: 400;
   padding: 24px 0;
   cursor: pointer;
+}
+
+/* footer */
+
+ /* footer code  */
+/* Apply these styles to the body and html to ensure full height */
+/* Ensure the page takes the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper to ensure footer is at the bottom */
+.footer-warp{
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content takes up the available space before the footer */
+main {
+  flex: 1;
+  padding: 20px; /* Adjust as necessary */
+}
+
+/* Footer styles */
+footer {
+  padding: 80px 0;
+    background-color: #807b7c;
+    z-index: 1;
+
+  /* margin-top: auto; Pushes footer to the bottom */
+  position: relative;
+}
+.footer-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+header-wrap, .footer-wrap, .l-section-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.foot-col.copyright-sec {
+  width: 18%;
+}
+.foot-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 8%;
+}
+.copyright-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.copyright-block .foot-logo {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+.copyright-block span {
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+footer h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3.23px;
+}
+/* .follow-us-listing {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+} */
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+.follow-us-listing li:first-child {
+  margin: 0;
+}
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+
+ul li, ol li {
+  font-size: inherit;
+}
+
+ul li, ol li {
+  font-size: inherit;
+}
+.foot-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 8%;
+}
+footer h6.resources {
+  border: 0;
+}
+footer h6.toggle {
+  position: relative;
+}
+footer h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3.23px;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+.foot-link-block .foot-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+.foot-link-block li:last-child {
+  margin: 0;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+.foot-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 8%;
+}
+footer h6.toggle {
+  position: relative;
+}
+footer h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3.23px;
+} 
+.foot-link-block {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+.foot-link-block li:last-child {
+  margin: 0;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+} 
+.foot-link-block li:last-child {
+  margin: 0;
+}
+.foot-link-block li {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+} 
+footer h6.toggle {
+  position: relative;
+}
+footer h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3.23px;
+}
+.foot-link-block {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+.foot-col.subscription-sec {
+  width: 23%;
+}
+.foot-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 8%;
+}
+footer h6 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3.23px;
+}
+.foot-link-block {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+.mob-view {
+  display: none;
+}
+element.style {
+  justify-content: center;
+}
+.follow-us-listing {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+  display: inline-block;
+  margin-left: 15px;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+.follow-us-listing li:first-child {
+  margin: 0;
+}
+
+ul li, ol li {
+  font-size: inherit;
+}
+img[_ngcontent-ng-c2306899274] {
+  border: 0;
+  max-width: 100%;
+}
+img[_ngcontent-ng-c2306899274] {
+  border: 0;
+  max-width: 100%;
+}
+img[_ngcontent-ng-c2306899274] {
+  border: 0;
+  max-width: 100%;
+}
+img[_ngcontent-ng-c2306899274] {
+  border: 0;
+  max-width: 100%;
+}
+user agent stylesheet
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.follow-us-listing[_ngcontent-ng-c2306899274] {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.follow-us-listing[_ngcontent-ng-c2306899274] {
+  font-size: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 2.5em;
+}
+ol, ul {
+  list-style: none;
+}
+.follow-us-listing li:first-child {
+  margin: 0;
+}
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+} 
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+.follow-us-listing li {
+  display: inline-block;
+  margin-left: 15px;
+}
+ul li, ol li {
+  font-size: inherit;
+}
+a {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.35px;
+  color: #FF8616;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+a, area, button, [role="button"], input, label, select, summary, textarea {
+  touch-action: manipulation;
 }
