@@ -7,11 +7,15 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+toggleLogin() {
+throw new Error('Method not implemented.');
+}
   form: any = {
     username: null,
     email: null,
     password: null
   };
+  isLoggedIn =false;
   isSuccessful = false;
   isSignUpFailed = false;
   errorMessage = '';

@@ -15,6 +15,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { PublishComponent } from './publish/publish.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PublishComponent } from './publish/publish.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    PublishComponent
+    PublishComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,6 @@ import { PublishComponent } from './publish/publish.component';
     HttpClientModule
   ],
   providers: [authInterceptorProviders],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HomeComponent]
 })
 export class AppModule { }

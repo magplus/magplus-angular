@@ -1,8 +1,86 @@
-<html>
-    <head>Magplus</head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magplus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
 
-        <p>Hello Nandani</p>
+    <!-- Header -->
+    <header class="bg-dark text-warning py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="https://www.magplus.com/" class="d-flex align-items-center">
+                <img src="https://diuptfdyitgzs.cloudfront.net/wp-content/uploads/2021/03/05074536/logo.svg" 
+                     alt="Magplus Logo" width="108" class="me-2">
+            </a>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="gravatar" src="https://secure.gravatar.com/avatar/5f0df9a16b308569844a54ba1a58a708.png?s=48" 
+                         alt="User Avatar" class="rounded-circle me-2" width="42" height="42">
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li class="dropdown-item">Ravi</li>
+                    <li><a class="dropdown-item" href="/"><i class="bi bi-house"></i> Publications</a></li>
+                    <li><a class="dropdown-item" href="https://login.magplus.com/logout?origin=https://publish.magplus.com">
+                        <i class="bi bi-power"></i> Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-    </body>
+    <!-- Announcement -->
+    <div id="announcement" class="alert alert-info text-center my-4" role="alert">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>2024-10-11:</strong>
+        <p><b>Notice:</b> Mag+ build is temporarily unavailable due to maintenance. 
+        For more information, contact <a href="mailto:support@magplus.com" class="text-decoration-underline text-info">Nandani</a>.</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="container">
+        <ul class="nav nav-tabs justify-content-end mb-4" id="main-menu">
+            <li class="nav-item">
+                <a class="nav-link active" id="magplus_admin_home_link" href="#">Mag+ Administration</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container bg-white shadow-sm p-4 rounded">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab">Active Brands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="test-tab" data-bs-toggle="tab" href="#test" role="tab">Test Brands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="partner-tab" data-bs-toggle="tab" href="#partner" role="tab">Partner Brands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab">Closed Brands</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                <ul id="your_publications_in_body" class="row row-cols-1 row-cols-md-3 g-3">
+                    <!-- Publications go here -->
+                </ul>
+            </div>
+            <!-- Additional tabs can be populated similarly -->
+        </div>
+    </div>
+
+    <!-- Footer (Optional) -->
+    <!-- 
+    <footer class="footer bg-dark text-light text-center py-3 mt-5">
+        <div>© Mag+ 2024 All rights reserved.</div>
+    </footer> 
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

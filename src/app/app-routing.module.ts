@@ -11,16 +11,18 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { PublishComponent } from './publish/publish.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: HomeComponent },
+  { path: 'register', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
   { path: 'publish', component: PublishComponent},
-  { path: '', redirectTo: 'login', pathMatch: 'full' }
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }  // Wildcard route to handle undefined routes
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

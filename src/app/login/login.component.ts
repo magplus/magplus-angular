@@ -8,10 +8,14 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+toggleSignup() {
+throw new Error('Method not implemented.');
+}
   form: any = {
     email: null,
     password: null
   };
+  isLoginVisible: boolean = true;
   isLoggedIn = false;
   isLoginFailed = false;
   errorMessage = '';
@@ -35,5 +39,8 @@ export class LoginComponent {
         this.isLoginFailed = true;
       }
     );
+  }
+  showRegister() {
+    this.isLoginVisible = false;
   }
 }
