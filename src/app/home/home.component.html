@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body data-aos-easing="ease" data-aos-duration="600" data-aos-delay="0">
+<!-- <header> -->
+  <div id="app">
+    <div id="app">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="logo" href="https://www.magplus.com/">
+          <img 
+            class="logo lazyloaded" 
+            src="https://diuptfdyitgzs.cloudfront.net/wp-content/uploads/2021/03/05074536/logo.svg" 
+            alt="mag+ Logo" 
+            title="Magplus Logo"
+          >
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Services<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">mag+ Now</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+</div>
+  
+ <!-- body  -->
+<div class="landing-page" >
+  <div class="content-wrapper" >
+    <div class="text-content">
+      <h1>Digital Magazine Publishing App, Software & Online Platform</h1>
+      <p>Create, Manage and Publish interactive and deeply engaging content to grow your brands
+      </p>
+      
+    </div>
+    <div class="image-content">
+      <img src="assets/images/your-image.jpg" alt="" />
+    </div>
+  </div>
+  
+    
+  <div class="login-toggle-container">
+
+      <div *ngIf="isLoginVisible" >
+        <a (click)="showRegister()">
+          <span class="small-scroll-text">Don’t have an account? Create one now!</span>
+        </a>
+      </div>
+      <div *ngIf="!isLoginVisible" >
+        <a (click)="showLogin()">
+          <span class="small-scroll-text">Already registered? Log in and explore!</span>
+        </a>
+      </div>
+    <app-login *ngIf="isLoginVisible" (loginSuccess)="onLoginSuccess()"></app-login>
+    <app-register *ngIf="!isLoginVisible"></app-register>
+
+  </div>
+</div>
+
+<!-- footer-->
+
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Logo and Copyright Section -->
+      <div class="col-md-4 text-center text-md-start mb-3">
+        <a href="https://www.magplus.com/" class="d-block mb-2">
+          <img class="logo" 
+               src="https://diuptfdyitgzs.cloudfront.net/wp-content/uploads/2021/03/05074536/logo.svg" 
+               alt="Megaplus Logo" title="Megaplus Logo" style="width: 150px;">
+        </a>
+        <p>mag+ is a registered Trademark <br>Copyright © 2020</p>
+      </div>
+
+      <!-- Resources Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.magplus.com/case-studies/" class="text-white">Case Studies</a></li>
+          <li><a href="https://www.magplus.com/tutorials/" class="text-white">Tutorials</a></li>
+          <li><a href="https://www.magplus.com/blog/" class="text-white">Blogs</a></li>
+          <li><a href="https://www.magplus.com/faqs/" class="text-white">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Legal</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.magplus.com/legal/privacy-policy-2/" class="text-white">Privacy Policy</a></li>
+          <li><a href="https://www.magplus.com/legal/conditions-of-use/" class="text-white">Terms of Use</a></li>
+          <li><a href="https://www.magplus.com/legal/eula/" class="text-white">License Agreement</a></li>
+        </ul>
+      </div>
+
+      <!-- Products Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Products</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.magplus.com/services/" class="text-white">Services</a></li>
+          <li><a href="https://www.magplus.com/pricing/" class="text-white">Pricing</a></li>
+          <li><a href="https://www.magplus.com/magplus-pro" class="text-white">mag+ Now</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.magplus.com/about" class="text-white">About Us</a></li>
+          <li><a href="https://www.mpslimited.com/events" class="text-white">Events</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us Section -->
+      <div class="col-md-12 text-center mt-4">
+        <h5>Follow Us</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/magplus/" target="_blank" title="Twitter">
+              <img src="https://www.magplus.com/wp-content/themes/magplus/images/icons/twitter.svg" 
+                   alt="Twitter" style="width: 30px;">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/magplus" target="_blank" title="Facebook">
+              <img src="https://www.magplus.com/wp-content/themes/magplus/images/icons/facebook.svg" 
+                   alt="Facebook" style="width: 30px;">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/magplus/" target="_blank" title="Instagram">
+              <img src="https://www.magplus.com/wp-content/themes/magplus/images/icons/instagram.svg" 
+                   alt="Instagram" style="width: 30px;">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/user/magplus" target="_blank" title="YouTube">
+              <img src="https://www.magplus.com/wp-content/themes/magplus/images/icons/youtube.svg" 
+                   alt="YouTube" style="width: 30px;">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
